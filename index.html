@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Guard Innovations | Enterprise IT, Network & Security</title>
-  <meta name="description" content="Smart Guard Innovations provides IT, network, cybersecurity, surveillance, access control, cloud, and managed support solutions across Canada." />
+  <title>Smart Guard Innovations | IT, Network, Security & Surveillance</title>
+  <meta name="description" content="Smart Guard Innovations provides managed IT, network infrastructure, cybersecurity, surveillance, access control, cloud and business continuity solutions across Canada." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
     :root{
       --ink:#07111f;
       --navy:#0b1729;
       --midnight:#020817;
-      --slate:#5f7188;
-      --muted:#94a3b8;
-      --paper:#f5f7fb;
-      --white:#ffffff;
+      --royal:#1747e8;
       --blue:#0b5cff;
-      --royal:#1438a8;
-      --cyan:#00b7d8;
+      --sky:#39c8ff;
       --gold:#d7a84d;
       --green:#10b981;
-      --line:#e3eaf3;
-      --darkLine:rgba(255,255,255,.13);
-      --shadow:0 28px 90px rgba(7,17,31,.16);
-      --softShadow:0 18px 55px rgba(7,17,31,.08);
-      --radius:28px;
+      --paper:#f5f7fb;
+      --soft:#eef4ff;
+      --white:#ffffff;
+      --slate:#607086;
+      --muted:#8fa0b5;
+      --line:#e2eaf4;
+      --glass:rgba(255,255,255,.11);
+      --darkLine:rgba(255,255,255,.14);
+      --shadow:0 32px 90px rgba(7,17,31,.17);
+      --softShadow:0 18px 50px rgba(7,17,31,.08);
+      --radius:30px;
       --max:1240px;
     }
 
@@ -37,61 +40,61 @@
     img{max-width:100%;display:block}
     button,input,select,textarea{font-family:inherit}
     .container{width:min(var(--max),92%);margin:auto}
-    .hide{display:none!important}
 
-    .topbar{background:#07111f;color:#dbeafe;font-size:13px;border-bottom:1px solid rgba(255,255,255,.1)}
-    .topbar .container{height:38px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .topbar strong{color:#f6d37a}
+    .topbar{background:#06101f;color:#dbeafe;font-size:13px;border-bottom:1px solid rgba(255,255,255,.1)}
+    .topbar .container{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .topbar strong{color:#f8d983}
     .topbar-right{display:flex;gap:22px;align-items:center;white-space:nowrap}
 
     .header{position:sticky;top:0;z-index:999;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
     .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
     .brand{display:flex;align-items:center;gap:14px;min-width:max-content}
-    .brand-mark{width:56px;height:56px;border-radius:18px;background:linear-gradient(135deg,#07111f,#0b5cff);display:grid;place-items:center;color:white;font-weight:900;box-shadow:0 18px 36px rgba(7,17,31,.24);overflow:hidden}
-    .brand img{height:54px;width:auto;object-fit:contain}
-    .brand-title{font-weight:900;letter-spacing:-.5px;line-height:1.05}
-    .brand-sub{display:block;color:var(--royal);font-size:11px;letter-spacing:2.6px;text-transform:uppercase;font-weight:900;margin-top:4px}
-    .navlinks{display:flex;gap:25px;align-items:center;font-size:14px;font-weight:850;color:#25344a}
+    .brand-mark{width:58px;height:58px;border-radius:19px;background:linear-gradient(135deg,#07111f,#0b5cff);display:grid;place-items:center;color:white;font-weight:950;box-shadow:0 18px 38px rgba(7,17,31,.24);overflow:hidden}
+    .brand-mark img{height:52px;width:auto;object-fit:contain}
+    .brand-title{font-weight:950;letter-spacing:-.55px;line-height:1.05}
+    .brand-sub{display:block;color:var(--royal);font-size:11px;letter-spacing:2.3px;text-transform:uppercase;font-weight:950;margin-top:4px}
+    .navlinks{display:flex;gap:24px;align-items:center;font-size:14px;font-weight:850;color:#25344a}
     .navlinks a{opacity:.82;transition:.25s;white-space:nowrap}
     .navlinks a:hover{opacity:1;color:var(--royal)}
-    .nav-cta{background:linear-gradient(135deg,#07111f,#0b5cff);color:white!important;padding:13px 18px;border-radius:999px;opacity:1!important;box-shadow:0 16px 34px rgba(7,92,255,.25)}
+    .nav-cta{background:linear-gradient(135deg,#07111f,#0b5cff);color:#fff!important;padding:13px 18px;border-radius:999px;opacity:1!important;box-shadow:0 16px 34px rgba(7,92,255,.24)}
     .menu-btn{display:none;border:0;background:var(--ink);color:white;border-radius:999px;padding:12px 16px;font-weight:900;cursor:pointer}
-
     .mobile-panel{display:none;position:fixed;inset:120px 18px auto 18px;background:white;border:1px solid var(--line);border-radius:24px;z-index:998;box-shadow:var(--shadow);padding:16px}
     .mobile-panel a{display:block;padding:14px 16px;font-weight:850;border-bottom:1px solid #eef2f7;color:#20314a}
     .mobile-panel a:last-child{border-bottom:0;background:var(--blue);color:white;border-radius:16px;text-align:center;margin-top:8px}
 
-    .hero{position:relative;min-height:790px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(2,8,23,.98),rgba(7,17,31,.82),rgba(7,17,31,.36)),url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2400&q=90') center/cover;overflow:hidden}
-    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 25%,rgba(215,168,77,.24),transparent 22%),radial-gradient(circle at 82% 75%,rgba(0,183,216,.34),transparent 30%)}
-    .hero:after{content:"";position:absolute;inset:-40%;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.14),transparent 48%);animation:sweep 8s infinite}
+    .hero{position:relative;min-height:825px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(2,8,23,.98),rgba(7,17,31,.86),rgba(7,17,31,.28)),url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=90') center/cover;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 71% 20%,rgba(57,200,255,.25),transparent 25%),radial-gradient(circle at 82% 78%,rgba(215,168,77,.28),transparent 28%)}
+    .hero:after{content:"";position:absolute;inset:-50%;background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.13),transparent 49%);animation:sweep 8.5s infinite}
     @keyframes sweep{0%{transform:translateX(-48%)}55%,100%{transform:translateX(58%)}}
-    .hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
-    .eyebrow,.kicker{color:#d7a84d;text-transform:uppercase;letter-spacing:2.8px;font-size:12px;font-weight:950;margin-bottom:18px}
-    .hero h1{font-size:clamp(48px,7vw,98px);line-height:.92;letter-spacing:-5px;max-width:940px;margin-bottom:26px}
-    .hero p{font-size:20px;color:#dbeafe;line-height:1.78;max-width:760px;margin-bottom:32px}
+    .hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}
+    .eyebrow,.kicker{color:#f8d983;text-transform:uppercase;letter-spacing:2.7px;font-size:12px;font-weight:950;margin-bottom:18px}
+    .hero h1{font-size:clamp(48px,7vw,96px);line-height:.92;letter-spacing:-5px;max-width:950px;margin-bottom:26px}
+    .hero p{font-size:20px;color:#dbeafe;line-height:1.78;max-width:750px;margin-bottom:32px}
     .actions{display:flex;gap:14px;flex-wrap:wrap}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#0b5cff,#1438a8);color:#fff;border:0;border-radius:999px;padding:15px 22px;font-weight:950;cursor:pointer;transition:.25s;box-shadow:0 16px 36px rgba(7,92,255,.25)}
-    .btn:hover{transform:translateY(-2px);background:#0048ce}
-    .btn.secondary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.42);box-shadow:none}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 22px 50px rgba(7,92,255,.32)}
+    .btn.secondary{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.42);box-shadow:none}
     .btn.dark{background:var(--ink)}
-    .hero-showcase{display:grid;grid-template-columns:1fr 1fr;gap:16px;transform:rotate(-1deg)}
-    .photo-card{position:relative;min-height:210px;border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 28px 80px rgba(0,0,0,.35);background:#111}
-    .photo-card img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-    .photo-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(2,8,23,.76))}
-    .photo-card span{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;font-weight:950;font-size:15px;color:white}
-    .photo-card.large{grid-column:1/-1;min-height:260px}
 
-    .trust-row{position:relative;z-index:3;margin-top:-44px}
+    .hero-board{display:grid;grid-template-columns:1fr 1fr;gap:17px;transform:rotate(-1deg)}
+    .hero-card{position:relative;min-height:215px;border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.2);box-shadow:0 28px 80px rgba(0,0,0,.36);background:#111;isolation:isolate}
+    .hero-card img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:saturate(1.04) contrast(1.08) brightness(.85);transition:.65s}
+    .hero-card:hover img{transform:scale(1.08)}
+    .hero-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(2,8,23,.82));z-index:1}
+    .hero-card span{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;font-weight:950;font-size:15px;color:white}
+    .hero-card.large{grid-column:1/-1;min-height:270px}
+
+    .trust-row{position:relative;z-index:3;margin-top:-45px}
     .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);background:white;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}
-    .trust-item{padding:26px;border-right:1px solid var(--line)}
+    .trust-item{padding:27px;border-right:1px solid var(--line)}
     .trust-item:last-child{border-right:0}
     .trust-item strong{display:block;font-size:18px;font-weight:950;color:#0f172a}
     .trust-item span{display:block;color:var(--slate);font-size:13px;margin-top:5px}
 
-    section{padding:102px 0}
+    section{padding:104px 0}
     .light{background:var(--paper)}
     .dark{background:linear-gradient(135deg,#020817,#07111f);color:white}
-    .section-head{max-width:860px;margin-bottom:46px}
+    .section-head{max-width:880px;margin-bottom:46px}
     .section-head.center{text-align:center;margin-inline:auto}
     h2{font-size:clamp(36px,5vw,68px);line-height:.98;letter-spacing:-2.8px;margin-bottom:18px}
     .section-head p{font-size:18px;color:var(--slate);line-height:1.78}
@@ -110,11 +113,15 @@
     .client-card span{color:#dbeafe}
 
     .solution-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .service-card{background:white;border:1px solid var(--line);border-radius:30px;min-height:440px;display:flex;flex-direction:column;box-shadow:var(--softShadow);transition:.28s;overflow:hidden}
-    .service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
-    .service-art{height:190px;position:relative;overflow:hidden;background:#07111f}
-    .service-art img{width:100%;height:100%;object-fit:cover;filter:saturate(1.02) contrast(1.05)}
-    .service-art:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(2,8,23,.72),rgba(11,92,255,.38));z-index:1}
+    .service-card{position:relative;perspective:1200px;transform-style:preserve-3d;will-change:transform;background:white;border:1px solid var(--line);border-radius:30px;min-height:450px;display:flex;flex-direction:column;box-shadow:var(--softShadow);transition:.28s;overflow:hidden}
+    .service-card:hover{transform:translateY(-10px) scale(1.018) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));box-shadow:0 35px 100px rgba(7,17,31,.24)}
+    .service-card::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.26),transparent 60%);opacity:0;transition:opacity .35s;pointer-events:none}
+    .service-card:hover::after{opacity:1;animation:shine 1s forwards}
+    @keyframes shine{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+    .service-art{height:195px;position:relative;overflow:hidden;background:#07111f}
+    .service-art img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.08);transition:transform .65s ease}
+    .service-card:hover .service-art img{transform:scale(1.08)}
+    .service-art:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(2,8,23,.72),rgba(11,92,255,.35));z-index:1}
     .service-art:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.11) 1px,transparent 1px);background-size:34px 34px;z-index:2;opacity:.55}
     .service-body{padding:29px;display:flex;flex-direction:column;flex:1}
     .service-body small{font-weight:950;color:var(--royal);letter-spacing:1.5px;text-transform:uppercase}
@@ -123,12 +130,12 @@
     .link{margin-top:auto;color:var(--royal);font-weight:950}
 
     .feature-band{background:linear-gradient(135deg,#07111f,#0b1729);color:white;overflow:hidden}
-    .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+    .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
     .feature-copy p{color:#cbd5e1;line-height:1.82;font-size:17px}
     .mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:25px}
     .mini{border:1px solid var(--darkLine);background:rgba(255,255,255,.06);border-radius:20px;padding:18px}
-    .mini strong{display:block;color:#f6d37a;margin-bottom:5px}
-    .feature-visual{height:470px;border:1px solid var(--darkLine);border-radius:34px;background:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85') center/cover;position:relative;overflow:hidden;box-shadow:0 30px 100px rgba(0,0,0,.28)}
+    .mini strong{display:block;color:#f8d983;margin-bottom:5px}
+    .feature-visual{height:470px;border:1px solid var(--darkLine);border-radius:34px;background:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1500&q=88') center/cover;position:relative;overflow:hidden;box-shadow:0 30px 100px rgba(0,0,0,.28)}
     .feature-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(2,8,23,.9),rgba(11,92,255,.32)),linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:auto,38px 38px,38px 38px;animation:gridMove 12s linear infinite}
     @keyframes gridMove{to{background-position:0 0,76px 76px,76px 76px}}
     .feature-node{position:absolute;border-radius:999px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18);padding:14px 18px;color:white;font-weight:900;backdrop-filter:blur(12px);z-index:2}
@@ -143,30 +150,239 @@
     .case{background:white;border:1px solid var(--line);border-radius:30px;box-shadow:var(--softShadow);transition:.28s;overflow:hidden}
     .case:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
     .case-top{height:190px;position:relative;background:#07111f;overflow:hidden}
-    .case-top img{width:100%;height:100%;object-fit:cover}
+    .case-top img{width:100%;height:100%;object-fit:cover;transition:.6s}
+    .case:hover .case-top img{transform:scale(1.07)}
     .case-top:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,8,23,.2),rgba(2,8,23,.82))}
     .case-body{padding:28px}.case-body small{color:var(--royal);font-weight:950;text-transform:uppercase;letter-spacing:1.4px}.case-body h3{font-size:26px;margin:12px 0}.case-body p{color:var(--slate);line-height:1.7}.case-body span{display:inline-block;color:var(--royal);font-weight:950;margin-top:18px}
 
     .process-list{display:grid;gap:18px}
-    .process-item{display:grid;grid-template-columns:94px 1fr 150px;align-items:center;background:rgba(255,255,255,.06);border:1px solid var(--darkLine);border-radius:28px;padding:26px}
-    .process-item strong{font-size:42px;color:#f6d37a;line-height:1}.process-item h3{font-size:27px}.process-item p{color:#bfd0e5;margin-top:5px}.process-item a{color:#f6d37a;font-weight:950;text-align:right}
+    .process-item{display:grid;grid-template-columns:94px 1fr 150px;align-items:center;background:rgba(255,255,255,.06);border:1px solid var(--darkLine);border-radius:28px;padding:26px;transition:.25s}
+    .process-item:hover{background:rgba(255,255,255,.09);transform:translateX(5px)}
+    .process-item strong{font-size:42px;color:#f8d983;line-height:1}.process-item h3{font-size:27px}.process-item p{color:#bfd0e5;margin-top:5px}.process-item a{color:#f8d983;font-weight:950;text-align:right}
 
     .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .price-card{background:white;border:1px solid var(--line);border-radius:30px;padding:36px;box-shadow:var(--softShadow);position:relative}
+    .price-card{background:white;border:1px solid var(--line);border-radius:30px;padding:36px;box-shadow:var(--softShadow);position:relative;transition:.25s}
+    .price-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
     .price-card.featured{border:2px solid var(--gold);transform:translateY(-12px);box-shadow:0 30px 90px rgba(215,168,77,.2)}
-    .badge{display:inline-block;background:linear-gradient(135deg,#07111f,#d7a84d);color:white;padding:8px 13px;border-radius:999px;font-size:12px;font-weight:950;margin-bottom:16px}.price-card h3{font-size:30px}.price{font-size:50px;font-weight:950;margin:12px 0;letter-spacing:-2px}.price small{font-size:15px;color:var(--slate);font-weight:600}.price-card ul{list-style:none;display:grid;gap:12px;color:#526071;margin-top:18px}.price-card li:before{content:"✓ ";color:var(--green);font-weight:950}
+    .badge{display:inline-block;background:linear-gradient(135deg,#07111f,#d7a84d);color:white;padding:8px 13px;border-radius:999px;font-size:12px;font-weight:950;margin-bottom:16px}
+    .price-card h3{font-size:30px}.price{font-size:50px;font-weight:950;margin:12px 0;letter-spacing:-2px}.price small{font-size:15px;color:var(--slate);font-weight:600}.price-card ul{list-style:none;display:grid;gap:12px;color:#526071;margin-top:18px}.price-card li:before{content:"✓ ";color:var(--green);font-weight:950}
 
     .cta{background:linear-gradient(135deg,#020817,#07111f);color:white}.cta-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:start}.cta p{color:#c4d3e6;font-size:18px;line-height:1.8;margin-bottom:24px}.contact-card{border:1px solid var(--darkLine);border-radius:28px;padding:26px;background:rgba(255,255,255,.06);display:grid;gap:10px}.lead-form{background:white;color:var(--ink);border-radius:30px;padding:30px;display:grid;gap:14px;box-shadow:var(--shadow)}.lead-form input,.lead-form select,.lead-form textarea{width:100%;padding:15px 16px;border:1px solid var(--line);border-radius:16px;font:inherit}.lead-form textarea{min-height:120px;resize:vertical}.lead-form button{border:0}.small{font-size:13px;color:#64748b}.whatsapp{position:fixed;right:22px;bottom:22px;z-index:1000;background:#25D366;color:white;padding:15px 19px;border-radius:999px;font-weight:950;box-shadow:0 14px 35px rgba(0,0,0,.25)}
 
-    .page-hero{position:relative;background:linear-gradient(90deg,rgba(2,8,23,.96),rgba(7,17,31,.8)),url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85') center/cover;color:white;padding:92px 0 74px;overflow:hidden}.page-hero:after{content:"";position:absolute;right:7%;bottom:-80px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(215,168,77,.28),transparent 65%)}.page-hero .container{position:relative;z-index:2}.breadcrumb{color:#f6d37a;font-size:13px;font-weight:850;margin-bottom:24px}.page-hero h1{font-size:clamp(42px,6vw,82px);line-height:.96;letter-spacing:-3px;max-width:980px}.page-hero p{color:#d7e6ff;font-size:20px;line-height:1.75;max-width:820px;margin-top:24px}.page-nav{background:white;border-bottom:1px solid var(--line);position:sticky;top:82px;z-index:20}.page-nav .container{display:flex;gap:24px;overflow:auto}.page-nav a{padding:18px 0;font-weight:950;color:#526071;white-space:nowrap}.content-block{padding:82px 0;border-bottom:1px solid var(--line)}.content-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}.content-grid h2{font-size:clamp(34px,4vw,56px)}.content-grid p{color:var(--slate);line-height:1.85;font-size:17px}.detail-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.detail-card{border:1px solid var(--line);border-radius:24px;padding:24px;background:#fff;box-shadow:0 14px 40px rgba(7,17,31,.05)}.detail-card strong{font-size:20px;display:block;margin-bottom:8px}.detail-card span{color:var(--slate);line-height:1.7}.quote{font-size:30px;line-height:1.25;letter-spacing:-1px;color:var(--ink);background:#fff8e8;border-left:5px solid var(--gold);padding:34px;margin-top:34px;border-radius:0 24px 24px 0}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px}.panel{background:white;border:1px solid var(--line);border-radius:30px;padding:42px;box-shadow:var(--softShadow)}.panel.dark-panel{background:var(--ink);color:white;border-color:var(--ink)}.panel h3{font-size:38px;line-height:1.08;letter-spacing:-1.3px;margin-bottom:18px}.panel p{color:var(--slate);line-height:1.8}.dark-panel p{color:#bfd0e5}.list{list-style:none;display:grid;gap:14px;margin-top:22px;color:#526071}.dark-panel .list{color:#d9e8f8}.list li{display:flex;gap:10px}.list li:before{content:"—";color:var(--gold);font-weight:950}.page-photo{min-height:380px;border-radius:34px;overflow:hidden;box-shadow:var(--shadow);position:relative}.page-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.page-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(2,8,23,.5))}
+    .page-hero{position:relative;background:linear-gradient(90deg,rgba(2,8,23,.96),rgba(7,17,31,.82)),url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=88') center/cover;color:white;padding:94px 0 76px;overflow:hidden}.page-hero:after{content:"";position:absolute;right:7%;bottom:-80px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(215,168,77,.28),transparent 65%)}.page-hero .container{position:relative;z-index:2}.breadcrumb{color:#f8d983;font-size:13px;font-weight:850;margin-bottom:24px}.page-hero h1{font-size:clamp(42px,6vw,82px);line-height:.96;letter-spacing:-3px;max-width:980px}.page-hero p{color:#d7e6ff;font-size:20px;line-height:1.75;max-width:820px;margin-top:24px}.page-nav{background:white;border-bottom:1px solid var(--line);position:sticky;top:82px;z-index:20}.page-nav .container{display:flex;gap:24px;overflow:auto}.page-nav a{padding:18px 0;font-weight:950;color:#526071;white-space:nowrap}.content-block{padding:82px 0;border-bottom:1px solid var(--line)}.content-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}.content-grid h2{font-size:clamp(34px,4vw,56px)}.content-grid p{color:var(--slate);line-height:1.85;font-size:17px}.detail-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.detail-card{border:1px solid var(--line);border-radius:24px;padding:24px;background:#fff;box-shadow:0 14px 40px rgba(7,17,31,.05)}.detail-card strong{font-size:20px;display:block;margin-bottom:8px}.detail-card span{color:var(--slate);line-height:1.7}.quote{font-size:30px;line-height:1.25;letter-spacing:-1px;color:var(--ink);background:#fff8e8;border-left:5px solid var(--gold);padding:34px;margin-top:34px;border-radius:0 24px 24px 0}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px}.panel{background:white;border:1px solid var(--line);border-radius:30px;padding:42px;box-shadow:var(--softShadow)}.panel.dark-panel{background:var(--ink);color:white;border-color:var(--ink)}.panel h3{font-size:38px;line-height:1.08;letter-spacing:-1.3px;margin-bottom:18px}.panel p{color:var(--slate);line-height:1.8}.dark-panel p{color:#bfd0e5}.list{list-style:none;display:grid;gap:14px;margin-top:22px;color:#526071}.dark-panel .list{color:#d9e8f8}.list li{display:flex;gap:10px}.list li:before{content:"—";color:var(--gold);font-weight:950}.page-photo{min-height:380px;border-radius:34px;overflow:hidden;box-shadow:var(--shadow);position:relative}.page-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.page-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(2,8,23,.5))}
 
     footer{background:#f8fafc;border-top:1px solid var(--line);padding:46px 0;color:#526071}.footer-grid{display:grid;grid-template-columns:1.3fr repeat(3,1fr);gap:24px}.footer-grid h4{color:var(--ink);margin-bottom:12px}.footer-grid a,.footer-grid span{display:block;color:#526071;margin-bottom:9px;font-size:14px}.fade{animation:fade .35s ease}@keyframes fade{from{opacity:.25;transform:translateY(10px)}to{opacity:1;transform:none}}
 
     @media(max-width:1050px){
-      .navlinks{display:none}.menu-btn{display:block}.hero .container,.feature-grid,.cta-grid,.content-grid,.two-col{grid-template-columns:1fr}.hero{padding:90px 0;min-height:auto}.hero-showcase{max-width:720px}.premium-logo-grid,.solution-grid,.stats,.case-grid,.price-grid,.trust-grid,.footer-grid,.detail-cards{grid-template-columns:1fr 1fr}.page-nav{top:82px}
+      .navlinks{display:none}.menu-btn{display:block}.hero .container,.feature-grid,.cta-grid,.content-grid,.two-col{grid-template-columns:1fr}.hero{padding:90px 0;min-height:auto}.hero-board{max-width:720px}.premium-logo-grid,.solution-grid,.stats,.case-grid,.price-grid,.trust-grid,.footer-grid,.detail-cards{grid-template-columns:1fr 1fr}.page-nav{top:82px}
     }
     @media(max-width:680px){
-      .topbar{display:none}.nav{height:76px}.brand-title{font-size:14px}.brand-sub{font-size:9px;letter-spacing:1.5px}.brand img{height:44px}.brand-mark{width:46px;height:46px}.hero h1{letter-spacing:-2.8px}.hero p{font-size:17px}.hero-showcase,.dash-grid,.premium-logo-grid,.solution-grid,.stats,.case-grid,.price-grid,.trust-grid,.footer-grid,.detail-cards{grid-template-columns:1fr}.trust-row{margin-top:0}.trust-grid{border-radius:0;border-left:0;border-right:0}.trust-item{border-right:0;border-bottom:1px solid var(--line)}section{padding:76px 0}.process-item{grid-template-columns:1fr;gap:10px}.process-item a{text-align:left}.price-card.featured{transform:none}.page-nav{top:76px}.whatsapp{left:18px;right:18px;text-align:center}.mobile-panel{inset:88px 14px auto 14px}.hero-showcase{display:none}
+      .topbar{display:none}.nav{height:76px}.brand-title{font-size:14px}.brand-sub{font-size:9px;letter-spacing:1.5px}.brand-mark{width:46px;height:46px}.brand-mark img{height:42px}.hero h1{letter-spacing:-2.7px}.hero p{font-size:17px}.hero-board,.premium-logo-grid,.solution-grid,.stats,.case-grid,.price-grid,.trust-grid,.footer-grid,.detail-cards{grid-template-columns:1fr}.trust-row{margin-top:0}.trust-grid{border-radius:0;border-left:0;border-right:0}.trust-item{border-right:0;border-bottom:1px solid var(--line)}section{padding:76px 0}.process-item{grid-template-columns:1fr;gap:10px}.process-item a{text-align:left}.price-card.featured{transform:none}.page-nav{top:76px}.whatsapp{left:18px;right:18px;text-align:center}.mobile-panel{inset:88px 14px auto 14px}.hero-board{display:none}
+    }
+  
+
+    /* ===== TRUE 10/10 WOW MOTION SYSTEM ===== */
+    .hero h1,
+    .page-hero h1{
+      background:linear-gradient(90deg,#ffffff,#dbeafe,#f8d983,#39c8ff,#ffffff);
+      background-size:320% auto;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      animation:premiumTextFlow 7s linear infinite;
+    }
+
+    @keyframes premiumTextFlow{
+      to{background-position:320% center}
+    }
+
+    .hero{
+      isolation:isolate;
+    }
+
+    .hero .container:before{
+      content:"";
+      position:absolute;
+      width:560px;
+      height:560px;
+      right:4%;
+      top:8%;
+      border-radius:50%;
+      background:radial-gradient(circle,rgba(11,92,255,.32),transparent 62%);
+      filter:blur(20px);
+      z-index:-1;
+      animation:orbFloat 7s ease-in-out infinite;
+    }
+
+    .hero .container:after{
+      content:"";
+      position:absolute;
+      width:420px;
+      height:420px;
+      left:-10%;
+      bottom:0;
+      border-radius:50%;
+      background:radial-gradient(circle,rgba(215,168,77,.22),transparent 65%);
+      filter:blur(18px);
+      z-index:-1;
+      animation:orbFloat 8s ease-in-out infinite reverse;
+    }
+
+    @keyframes orbFloat{
+      0%,100%{transform:translate3d(0,0,0) scale(1)}
+      50%{transform:translate3d(0,-34px,0) scale(1.06)}
+    }
+
+    .btn{
+      position:relative;
+      overflow:hidden;
+    }
+
+    .btn:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(120deg,transparent,rgba(255,255,255,.48),transparent);
+      transform:translateX(-125%);
+      pointer-events:none;
+    }
+
+    .btn:hover:before{
+      animation:buttonFlash .75s forwards;
+    }
+
+    @keyframes buttonFlash{
+      to{transform:translateX(125%)}
+    }
+
+    .hero-card,
+    .logo-card,
+    .case,
+    .price-card,
+    .stat,
+    .detail-card,
+    .panel{
+      transform-style:preserve-3d;
+    }
+
+    .hero-card:hover,
+    .logo-card:hover,
+    .case:hover,
+    .stat:hover,
+    .detail-card:hover,
+    .panel:hover{
+      transform:translateY(-10px) scale(1.02);
+    }
+
+    .stat,
+    .detail-card,
+    .panel{
+      transition:.3s ease;
+    }
+
+    .stat:before,
+    .detail-card:before,
+    .panel:before{
+      content:"";
+      position:absolute;
+      width:180px;
+      height:180px;
+      right:-70px;
+      top:-70px;
+      border-radius:50%;
+      background:radial-gradient(circle,rgba(11,92,255,.16),transparent 70%);
+      pointer-events:none;
+    }
+
+    .stat,
+    .detail-card,
+    .panel{
+      position:relative;
+      overflow:hidden;
+    }
+
+    .feature-node{
+      animation:floatingNode 4.2s ease-in-out infinite;
+    }
+
+    .node-2{animation-delay:.45s}
+    .node-3{animation-delay:.9s}
+    .node-4{animation-delay:1.35s}
+
+    @keyframes floatingNode{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-16px)}
+    }
+
+    .logo-card img{
+      transition:.35s ease;
+    }
+
+    .logo-card:hover img{
+      transform:scale(1.09);
+    }
+
+    .service-card:hover .service-body h3,
+    .case:hover h3,
+    .price-card:hover h3{
+      color:var(--royal);
+    }
+
+    .process-item{
+      position:relative;
+      overflow:hidden;
+    }
+
+    .process-item:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(90deg,rgba(11,92,255,.22),transparent 68%);
+      opacity:0;
+      transition:.3s;
+      pointer-events:none;
+    }
+
+    .process-item:hover:before{
+      opacity:1;
+    }
+
+    .wow-reveal{
+      opacity:0;
+      transform:translateY(38px) scale(.985);
+      transition:opacity .85s ease, transform .85s cubic-bezier(.2,.7,.2,1);
+    }
+
+    .wow-reveal.show-wow{
+      opacity:1;
+      transform:translateY(0) scale(1);
+    }
+
+    .premium-glow-border{
+      position:relative;
+    }
+
+    .premium-glow-border:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:inherit;
+      padding:1px;
+      background:linear-gradient(135deg,rgba(57,200,255,.55),rgba(215,168,77,.55),rgba(11,92,255,.35));
+      -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+      -webkit-mask-composite:xor;
+      mask-composite:exclude;
+      opacity:0;
+      transition:.35s;
+      pointer-events:none;
+    }
+
+    .premium-glow-border:hover:after{
+      opacity:1;
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+      .wow-reveal{opacity:1;transform:none}
     }
   </style>
 </head>
@@ -177,20 +393,20 @@
     const brandLogo = 'logo.png';
 
     const photoMap = {
-      'it-solutions':'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=85',
-      'network-infrastructure':'https://images.unsplash.com/photo-1581091870627-3d3d1c9d0e3b?auto=format&fit=crop&w=1200&q=85',
-      'security-systems':'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=85',
-      'cybersecurity':'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=85',
-      'cloud-continuity':'https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1200&q=85',
-      'managed-support':'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=85',
-      'case-retail':'https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1200&q=85',
-      'case-office':'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85',
-      'case-warehouse':'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85',
-      'about':'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=85',
-      'partners':'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=1200&q=85',
-      'solutions':'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=85',
-      'resources':'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=85',
-      'industries':'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85'
+      'it-solutions':'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=88',
+      'network-infrastructure':'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=88',
+      'security-systems':'https://images.unsplash.com/photo-1581092921461-7d65ca45393a?auto=format&fit=crop&w=1200&q=88',
+      'cybersecurity':'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=88',
+      'cloud-continuity':'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=88',
+      'managed-support':'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=88',
+      'case-retail':'https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1200&q=88',
+      'case-office':'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=88',
+      'case-warehouse':'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=88',
+      'about':'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=88',
+      'partners':'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=1200&q=88',
+      'solutions':'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=88',
+      'resources':'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=88',
+      'industries':'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=88'
     };
 
     const partners = [
@@ -232,7 +448,7 @@
     };
 
     function safeImg(src, alt){
-      return `<img src="${src}" alt="${alt}" onerror="this.style.display='none'; this.parentElement.classList.add('missing-logo');">`;
+      return `<img src="${src}" alt="${alt}" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('missing-logo');">`;
     }
 
     function header(){
@@ -263,18 +479,22 @@
     function footer(){return `<footer><div class="container footer-grid"><div><h4>Smart Guard Innovations</h4><span>Enterprise IT, network and security solutions across Canada.</span></div><div><h4>Solutions</h4><a href="#/service/it-solutions">IT Solutions</a><a href="#/service/network-infrastructure">Network Infrastructure</a><a href="#/service/security-systems">Security Systems</a></div><div><h4>Company</h4><a href="#/about">About SGI</a><a href="#/partners">Partners</a><a href="#/industries">Industries</a><a href="#/case-studies">Case Studies</a><a href="#/pricing">Pricing</a></div><div><h4>Contact</h4><span>437-922-1449</span><span>289-892-5694</span><span>info@smartguardinnovations.ca</span></div></div></footer><a class="whatsapp" href="https://wa.me/14379221449?text=Hi%20Smart%20Guard%20Innovations%2C%20I%20would%20like%20a%20free%20IT%20assessment." target="_blank" rel="noopener">WhatsApp SGI</a>`}
 
     function logoSections(){
-      return `<section class="logo-section"><div class="container"><div class="section-head center"><div class="kicker">Authorized Technology Partners</div><h2>Certified platforms we deploy and support.</h2><p>Separated from client proof so visitors immediately understand what is partner ecosystem and what is industry experience.</p></div><div class="premium-logo-grid">${partners.map(([src,label])=>`<div class="logo-card">${safeImg(src,label)}<span>${label}</span></div>`).join('')}</div></div></section><section class="client-proof"><div class="container"><div class="section-head center"><div class="kicker">Trusted Across Industries</div><h2>Experience across real business environments.</h2><p>From real estate and healthcare to retail, hospitality, retirement living and commercial spaces — SGI builds technology around how each business operates.</p></div><div class="premium-logo-grid">${clients.map(([src,label])=>`<div class="logo-card client-card">${safeImg(src,label)}<span>${label}</span></div>`).join('')}</div></div></section>`;
+      return `<section class="logo-section"><div class="container"><div class="section-head center"><div class="kicker">Authorized Technology Partners</div><h2>Certified platforms we deploy and support.</h2><p>Partner logos are separated from client proof so visitors clearly understand SGI’s technology capability layer.</p></div><div class="premium-logo-grid">${partners.map(([src,label])=>`<div class="logo-card">${safeImg(src,label)}<span>${label}</span></div>`).join('')}</div></div></section><section class="client-proof"><div class="container"><div class="section-head center"><div class="kicker">Trusted Across Industries</div><h2>Experience across real business environments.</h2><p>From real estate and healthcare to retail, hospitality, retirement living and commercial spaces — SGI builds technology around how each business operates.</p></div><div class="premium-logo-grid">${clients.map(([src,label])=>`<div class="logo-card client-card">${safeImg(src,label)}<span>${label}</span></div>`).join('')}</div></div></section>`;
     }
 
-    function serviceGrid(){let s=[['it-solutions','Managed IT Solutions','Support, Microsoft 365, devices, users, backups and daily operations.'],['network-infrastructure','Network Infrastructure','Cabling, Wi-Fi, firewalls, switches, VLANs and multi-site connectivity.'],['security-systems','Security & Surveillance','CCTV, access control, alarms, intercoms and monitoring visibility.'],['cybersecurity','Cybersecurity','Endpoint protection, firewalls, secure access, backups and hardening.'],['cloud-continuity','Cloud & Continuity','Microsoft 365, migration, remote access, backup and disaster recovery.'],['managed-support','Managed Support','Monitoring, documentation, maintenance, support workflow and improvement.']];return `<div class="solution-grid">${s.map((x,i)=>`<a class="service-card" href="#/service/${x[0]}"><div class="service-art"><img src="${photoMap[x[0]]}" alt="${x[1]}"></div><div class="service-body"><small>0${i+1}</small><h3>${x[1]}</h3><p>${x[2]}</p><span class="link">Open full page →</span></div></a>`).join('')}</div>`}
+    function serviceGrid(){let s=[['it-solutions','Managed IT Solutions','Support, Microsoft 365, devices, users, backups and daily operations.'],['network-infrastructure','Network Infrastructure','Cabling, Wi-Fi, firewalls, switches, VLANs and multi-site connectivity.'],['security-systems','Security & Surveillance','CCTV, access control, alarms, intercoms and monitoring visibility.'],['cybersecurity','Cybersecurity','Endpoint protection, firewalls, secure access, backups and hardening.'],['cloud-continuity','Cloud & Continuity','Microsoft 365, migration, remote access, backup and disaster recovery.'],['managed-support','Managed Support','Monitoring, documentation, maintenance, support workflow and improvement.']];return `<div class="solution-grid">${s.map((x,i)=>`<a class="service-card" href="#/service/${x[0]}"><div class="service-art"><img src="${photoMap[x[0]]}" alt="${x[1]}" loading="lazy"></div><div class="service-body"><small>0${i+1}</small><h3>${x[1]}</h3><p>${x[2]}</p><span class="link">Open full page →</span></div></a>`).join('')}</div>`}
 
-    function caseGrid(){let c=[['case-retail','Retail Business — GTA','Multi-location visibility','Camera reliability, remote viewing, POS stability and network improvement.'],['case-office','Corporate Office — Mississauga','Modern IT environment','Microsoft 365, workstation setup, endpoint protection and support workflow.'],['case-warehouse','Warehouse — Brampton','Security and coverage','CCTV coverage, access control, Wi-Fi reach and operational visibility.']];return `<div class="case-grid">${c.map(x=>`<a class="case" href="#/${x[0]}"><div class="case-top"><img src="${photoMap[x[0]]}" alt="${x[2]}"></div><div class="case-body"><small>${x[1]}</small><h3>${x[2]}</h3><p>${x[3]}</p><span>Open case study →</span></div></a>`).join('')}</div>`}
+    function caseGrid(){let c=[['case-retail','Retail Business — GTA','Multi-location visibility','Camera reliability, remote viewing, POS stability and network improvement.'],['case-office','Corporate Office — Mississauga','Modern IT environment','Microsoft 365, workstation setup, endpoint protection and support workflow.'],['case-warehouse','Warehouse — Brampton','Security and coverage','CCTV coverage, access control, Wi-Fi reach and operational visibility.']];return `<div class="case-grid">${c.map(x=>`<a class="case" href="#/${x[0]}"><div class="case-top"><img src="${photoMap[x[0]]}" alt="${x[2]}" loading="lazy"></div><div class="case-body"><small>${x[1]}</small><h3>${x[2]}</h3><p>${x[3]}</p><span>Open case study →</span></div></a>`).join('')}</div>`}
 
     function pricingCards(){return `<div class="price-grid"><div class="price-card"><h3>Essential</h3><div class="price">$499 <small>/ month</small></div><ul><li>Basic monitoring</li><li>Helpdesk support</li><li>System maintenance</li><li>Monthly health review</li></ul></div><div class="price-card featured"><span class="badge">Most Popular</span><h3>Professional</h3><div class="price">$999 <small>/ month</small></div><ul><li>IT + network management</li><li>Security monitoring</li><li>Priority response</li><li>Documentation and reporting</li></ul></div><div class="price-card"><h3>Enterprise</h3><div class="price">Custom</div><ul><li>Fully managed IT</li><li>Advanced cybersecurity</li><li>Dedicated planning</li><li>Multi-site support</li></ul></div></div>`}
 
     function contactSection(){return `<section class="cta" id="contact"><div class="container cta-grid"><div><div class="kicker">Free Assessment</div><h2>Let’s review your environment and build the right plan.</h2><p>SGI will help identify risks, gaps and opportunities across IT, network and security systems.</p><div class="contact-card"><strong>Smart Guard Innovations Inc.</strong><span>437-922-1449</span><span>289-892-5694</span><span>info@smartguardinnovations.ca</span><span>smartguardinnovations.ca</span></div></div><form class="lead-form" action="mailto:info@smartguardinnovations.ca" method="post" enctype="text/plain"><input name="Name" placeholder="Your name" required><input name="Company" placeholder="Company name"><input type="email" name="Email" placeholder="Email address" required><input name="Phone" placeholder="Phone number"><select name="Service"><option value="">What do you need help with?</option><option>IT Support</option><option>Network Infrastructure</option><option>Cybersecurity</option><option>Surveillance / Cameras</option><option>Full Assessment</option></select><textarea name="Message" placeholder="Briefly describe your requirement"></textarea><button class="btn" type="submit">Request Free Assessment</button><div class="small">This opens your email app so you can send the request directly.</div></form></div></section>`}
 
-    function home(){return `${header()}<main><section class="hero"><div class="container"><div><div class="eyebrow">Enterprise IT • Network • Security • Surveillance</div><h1>Build a safer, smarter, more resilient business.</h1><p>Smart Guard Innovations brings IT, network, cybersecurity, cloud and physical security together into one accountable technology partner across Canada.</p><div class="actions"><a class="btn" href="#/contact">Book Free Assessment →</a><a class="btn secondary" href="#/services">Explore Solutions</a></div></div><div class="hero-showcase"><div class="photo-card large"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=85"><span>Real business environments</span></div><div class="photo-card"><img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=900&q=85"><span>Office & team collaboration</span></div><div class="photo-card"><img src="https://images.unsplash.com/photo-1581091012184-5c6c3c9c1c2a?auto=format&fit=crop&w=900&q=85"><span>On-site technical work</span></div></div></div></section><section class="trust-row"><div class="container"><div class="trust-grid"><div class="trust-item"><strong>IT Solutions</strong><span>Managed support and operations</span></div><div class="trust-item"><strong>Networking</strong><span>Cabling, Wi-Fi and infrastructure</span></div><div class="trust-item"><strong>Security</strong><span>Cybersecurity, CCTV and access</span></div><div class="trust-item"><strong>Canada-wide</strong><span>Built for growing businesses</span></div></div></div></section>${logoSections()}<section id="services"><div class="container"><div class="section-head"><div class="kicker">Solutions</div><h2>One partner for your complete technology environment.</h2><p>Each service opens into a full explanation page — business value, technical scope, delivery model and outcomes.</p></div>${serviceGrid()}</div></section><section class="feature-band"><div class="container feature-grid"><div class="feature-copy"><div class="kicker">The SGI Difference</div><h2>Not just installation. Long-term technology ownership.</h2><p>SGI positions your IT, network, cyber and physical security as one operating environment. That means better planning, fewer gaps, faster support and clearer accountability.</p><div class="mini-grid"><div class="mini"><strong>Strategy</strong><span>Business-first assessment</span></div><div class="mini"><strong>Architecture</strong><span>Systems designed together</span></div><div class="mini"><strong>Delivery</strong><span>Professional implementation</span></div><div class="mini"><strong>Support</strong><span>Ongoing ownership</span></div></div></div><div class="feature-visual"><div class="feature-node node-1">Cloud</div><div class="feature-node node-2">Network</div><div class="feature-node node-3">Cyber</div><div class="feature-node node-4">CCTV</div></div></div></section><section class="light"><div class="container"><div class="section-head"><div class="kicker">Business Impact</div><h2>Technology should drive growth — not slow it down.</h2><p>Businesses lose money through downtime, weak security, vendor complexity and outdated infrastructure. SGI helps convert technology from a cost center into a growth driver.</p></div><div class="stats"><div class="stat"><strong>90%</strong><span>Downtime reduction focus</span><p>Plan, monitor and support systems to reduce avoidable interruptions.</p></div><div class="stat"><strong>40%</strong><span>Productivity improvement target</span><p>Reduce the recurring technical friction that slows teams down.</p></div><div class="stat"><strong>70%</strong><span>Risk reduction approach</span><p>Improve visibility, backup planning, access control and security posture.</p></div></div></div></section><section class="light"><div class="container"><div class="section-head"><div class="kicker">Case Studies</div><h2>Confidential project stories. Real business problems.</h2><p>No fake client names. Each story focuses on the problem, solution and outcome.</p></div>${caseGrid()}</div></section><section class="dark"><div class="container"><div class="section-head"><div class="kicker">Process</div><h2>Simple process. Enterprise discipline.</h2><p>From consultation to assessment, custom solution and ongoing support.</p></div><div class="process-list"><div class="process-item"><strong>01</strong><div><h3>Consultation</h3><p>Understand business goals, sites, users, risks and current setup.</p></div><a href="#/contact">Start</a></div><div class="process-item"><strong>02</strong><div><h3>Assessment</h3><p>Identify gaps, weak points, downtime causes and security exposure.</p></div><a href="#/contact">Review</a></div><div class="process-item"><strong>03</strong><div><h3>Solution</h3><p>Create clear scope, pricing, priority and timeline.</p></div><a href="#/pricing">Options</a></div><div class="process-item"><strong>04</strong><div><h3>Deploy & Support</h3><p>Implement, test, document, train, monitor and optimize.</p></div><a href="#/contact">Talk</a></div></div></div></section><section class="light"><div class="container"><div class="section-head"><div class="kicker">Pricing</div><h2>Clear plans. Custom scope when needed.</h2><p>Monthly support and project-based investments give clients a simple path to start.</p></div>${pricingCards()}</div></section>${contactSection()}</main>${footer()}`}
+    function home(){return `${header()}<main><section class="hero"><div class="container"><div><div class="eyebrow">Enterprise IT • Network • Security • Surveillance</div><h1>Build a safer, smarter, more resilient business.</h1><p>Smart Guard Innovations brings IT, network, cybersecurity, cloud and physical security together into one accountable technology partner across Canada.</p><div class="actions"><a class="btn" href="#/contact">Book Free Assessment →</a><a class="btn secondary" href="#/services">Explore Solutions</a></div></div><div class="hero-board">
+  <div class="hero-card large"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=88" alt="Network infrastructure"><span>Network Infrastructure</span></div>
+  <div class="hero-card"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=88" alt="Cybersecurity"><span>Cybersecurity</span></div>
+  <div class="hero-card"><img src="https://images.unsplash.com/photo-1581092921461-7d65ca45393a?auto=format&fit=crop&w=900&q=88" alt="Field execution"><span>Field Execution</span></div>
+</div></div></section><section class="trust-row"><div class="container"><div class="trust-grid"><div class="trust-item"><strong>IT Solutions</strong><span>Managed support and operations</span></div><div class="trust-item"><strong>Networking</strong><span>Cabling, Wi-Fi and infrastructure</span></div><div class="trust-item"><strong>Security</strong><span>Cybersecurity, CCTV and access</span></div><div class="trust-item"><strong>Canada-wide</strong><span>Built for growing businesses</span></div></div></div></section>${logoSections()}<section id="services"><div class="container"><div class="section-head"><div class="kicker">Solutions</div><h2>One partner for your complete technology environment.</h2><p>Each service opens into a full explanation page — business value, technical scope, delivery model and outcomes.</p></div>${serviceGrid()}</div></section><section class="feature-band"><div class="container feature-grid"><div class="feature-copy"><div class="kicker">The SGI Difference</div><h2>Not just installation. Long-term technology ownership.</h2><p>SGI positions your IT, network, cyber and physical security as one operating environment. That means better planning, fewer gaps, faster support and clearer accountability.</p><div class="mini-grid"><div class="mini"><strong>Strategy</strong><span>Business-first assessment</span></div><div class="mini"><strong>Architecture</strong><span>Systems designed together</span></div><div class="mini"><strong>Delivery</strong><span>Professional implementation</span></div><div class="mini"><strong>Support</strong><span>Ongoing ownership</span></div></div></div><div class="feature-visual"><div class="feature-node node-1">Cloud</div><div class="feature-node node-2">Network</div><div class="feature-node node-3">Cyber</div><div class="feature-node node-4">CCTV</div></div></div></section><section class="light"><div class="container"><div class="section-head"><div class="kicker">Business Impact</div><h2>Technology should drive growth — not slow it down.</h2><p>Businesses lose money through downtime, weak security, vendor complexity and outdated infrastructure. SGI helps convert technology from a cost center into a growth driver.</p></div><div class="stats"><div class="stat"><strong>90%</strong><span>Downtime reduction focus</span><p>Plan, monitor and support systems to reduce avoidable interruptions.</p></div><div class="stat"><strong>40%</strong><span>Productivity improvement target</span><p>Reduce the recurring technical friction that slows teams down.</p></div><div class="stat"><strong>70%</strong><span>Risk reduction approach</span><p>Improve visibility, backup planning, access control and security posture.</p></div></div></div></section><section class="light"><div class="container"><div class="section-head"><div class="kicker">Case Studies</div><h2>Confidential project stories. Real business problems.</h2><p>No fake client names. Each story focuses on the problem, solution and outcome.</p></div>${caseGrid()}</div></section><section class="dark"><div class="container"><div class="section-head"><div class="kicker">Process</div><h2>Simple process. Enterprise discipline.</h2><p>From consultation to assessment, custom solution and ongoing support.</p></div><div class="process-list"><div class="process-item"><strong>01</strong><div><h3>Consultation</h3><p>Understand business goals, sites, users, risks and current setup.</p></div><a href="#/contact">Start</a></div><div class="process-item"><strong>02</strong><div><h3>Assessment</h3><p>Identify gaps, weak points, downtime causes and security exposure.</p></div><a href="#/contact">Review</a></div><div class="process-item"><strong>03</strong><div><h3>Solution</h3><p>Create clear scope, pricing, priority and timeline.</p></div><a href="#/pricing">Options</a></div><div class="process-item"><strong>04</strong><div><h3>Deploy & Support</h3><p>Implement, test, document, train, monitor and optimize.</p></div><a href="#/contact">Talk</a></div></div></div></section><section class="light"><div class="container"><div class="section-head"><div class="kicker">Pricing</div><h2>Clear plans. Custom scope when needed.</h2><p>Monthly support and project-based investments give clients a simple path to start.</p></div>${pricingCards()}</div></section>${contactSection()}</main>${footer()}`}
 
     function servicePage(key){let p=pages[key];if(!p)return home();return `${header()}<main class="fade"><section class="page-hero"><div class="container"><div class="breadcrumb"><a href="#/">Home</a> / ${p.k}</div><h1>${p.title}</h1><p>${p.intro}</p><a class="btn" href="#/contact" style="margin-top:26px">Book Assessment</a></div></section><div class="page-nav"><div class="container"><a href="#overview">Overview</a><a href="#capabilities">Capabilities</a><a href="#delivery">Delivery</a><a href="#contact-block">Start</a></div></div><section id="overview" class="content-block"><div class="container content-grid"><div><div class="kicker">Overview</div><h2>Why this matters.</h2><div class="page-photo"><img src="${photoMap[key] || photoMap['solutions']}" alt="${p.title}"></div></div><div><p>${p.why}</p><div class="quote">${p.quote}</div></div></div></section><section id="capabilities" class="content-block"><div class="container content-grid"><div><div class="kicker">Capabilities</div><h2>What SGI delivers.</h2></div><div class="detail-cards">${p.cards.map(c=>`<div class="detail-card"><strong>${c[0]}</strong><span>${c[1]}</span></div>`).join('')}</div></div></section><section id="delivery" class="content-block light"><div class="container two-col"><div class="panel"><h3>How we approach delivery</h3><p>SGI starts with assessment, then builds a practical scope with timeline, priorities and support requirements. The objective is to reduce surprises and deliver a solution that works in real business conditions.</p><ul class="list"><li>Discovery and assessment</li><li>Clear scope and recommendation</li><li>Professional implementation</li><li>Testing, documentation and support</li></ul></div><div class="panel dark-panel"><h3>Expected business outcome</h3><p>Better reliability, stronger security, clearer accountability and an environment that is easier to support as your business grows.</p><a href="#/contact" class="btn" style="margin-top:24px">Discuss this service</a></div></div></section><div id="contact-block">${contactSection()}</div></main>${footer()}`}
 
@@ -306,6 +526,52 @@
       else if(['services','about','solutions','partners','resources','industries','case-studies','pricing','contact'].includes(route)) app.innerHTML=listPage(route);
       else app.innerHTML=home();
       window.scrollTo(0,0);
+      setTimeout(()=>{
+        activatePremiumTilt();
+        activateWowReveal();
+      },50);
+    }
+
+    function activatePremiumTilt(){
+      document.querySelectorAll('.service-card').forEach(card=>{
+        card.addEventListener('mousemove',e=>{
+          const rect=card.getBoundingClientRect();
+          const x=e.clientX-rect.left;
+          const y=e.clientY-rect.top;
+          const midX=rect.width/2;
+          const midY=rect.height/2;
+          const rotateY=((x-midX)/midX)*7;
+          const rotateX=-((y-midY)/midY)*7;
+          card.style.setProperty('--rx',rotateX+'deg');
+          card.style.setProperty('--ry',rotateY+'deg');
+        });
+        card.addEventListener('mouseleave',()=>{
+          card.style.setProperty('--rx','0deg');
+          card.style.setProperty('--ry','0deg');
+        });
+      });
+    }
+
+    let revealObserver;
+    function activateWowReveal(){
+      if(revealObserver) revealObserver.disconnect();
+      revealObserver = new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('show-wow');
+          }
+        });
+      },{threshold:.14});
+
+      document.querySelectorAll('section,.service-card,.case,.price-card,.logo-card,.stat,.detail-card,.panel,.process-item')
+        .forEach((el,index)=>{
+          el.classList.add('wow-reveal');
+          el.style.transitionDelay = Math.min(index * 35, 260) + 'ms';
+          revealObserver.observe(el);
+        });
+
+      document.querySelectorAll('.service-card,.case,.price-card,.logo-card,.stat,.detail-card,.panel')
+        .forEach(el=>el.classList.add('premium-glow-border'));
     }
 
     window.addEventListener('hashchange',render);
