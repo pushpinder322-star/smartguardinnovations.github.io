@@ -3,228 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart Guard Innovations</title>
-
+<title>Smart Guard Innovations | IT, Network & Security Solutions</title>
+<meta name="description" content="Smart Guard Innovations provides IT, network, cybersecurity, surveillance, and managed support solutions for growing businesses across Canada.">
 <style>
-
-/* ===== GLOBAL ===== */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #f8fafc;
-}
-
-/* ===== CONTAINER ===== */
-.container {
-  width: 92%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* ===== HEADER ===== */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: rgba(255,255,255,0.8);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-}
-
-/* LOGO */
-.brand img {
-  height: 46px;
-  transition: 0.3s;
-}
-.brand img:hover {
-  transform: scale(1.05);
-}
-
-/* NAV */
-.nav-links {
-  display: flex;
-  gap: 30px;
-}
-.nav-links a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 600;
-  opacity: 0.7;
-}
-.nav-links a:hover {
-  opacity: 1;
-  color: #0052cc;
-}
-
-/* ===== HERO ===== */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 120px 0;
-}
-
-.hero h1 {
-  font-size: 60px;
-  max-width: 700px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 20px;
-  max-width: 600px;
-  opacity: 0.9;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 22px;
-  background: #0052cc;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* ===== SECTIONS ===== */
-section {
-  padding: 80px 0;
-}
-
-h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.card {
-  padding: 25px;
-  border: 1px solid #e5e7eb;
-  background: white;
-}
-
-/* ===== STATS ===== */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.stat {
-  text-align: center;
-}
-.stat strong {
-  font-size: 50px;
-  color: #0052cc;
-}
-
-/* ===== CTA ===== */
-.cta {
-  background: #07111f;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #666;
-}
-
-@media(max-width:900px){
-  .grid, .stats {
-    grid-template-columns: 1fr;
-  }
-  .hero h1 {
-    font-size: 40px;
-  }
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#f8fafc;color:#111827;line-height:1.55}
+a{text-decoration:none;color:inherit}.container{width:92%;max-width:1200px;margin:auto}
+header{position:sticky;top:0;z-index:999;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,0,0,.06)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}.brand img{height:48px;width:auto;display:block;filter:drop-shadow(0 4px 12px rgba(0,0,0,.16));transition:.25s}.brand img:hover{transform:scale(1.04)}
+.nav-links{display:flex;gap:28px;align-items:center}.nav-links a{font-size:14px;font-weight:650;color:#111827;opacity:.76;transition:.25s}.nav-links a:hover{opacity:1;color:#0052cc}.nav-cta{background:#0052cc;color:white!important;opacity:1!important;padding:10px 16px;border-radius:3px}
+.hero{background:linear-gradient(90deg,rgba(3,10,24,.88),rgba(3,10,24,.58)),url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80') center/cover;color:white;padding:118px 0 100px}.hero-content{max-width:780px}.eyebrow{color:#8ec5ff;font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:20px}.hero h1{font-size:clamp(42px,6vw,76px);line-height:.98;letter-spacing:-2.3px;margin-bottom:24px}.hero p{font-size:21px;color:#e5edf8;max-width:660px;margin-bottom:28px}.actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;background:#0052cc;color:white;padding:14px 22px;border-radius:3px;font-weight:750;transition:.25s}.btn:hover{transform:translateY(-2px);background:#003f9e}.btn.secondary{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35)}.trust-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;color:#d9e6f7;font-size:14px}.trust-pill{border:1px solid rgba(255,255,255,.26);padding:9px 12px;background:rgba(255,255,255,.06)}
+section{padding:84px 0}.section-head{max-width:780px;margin-bottom:42px}.kicker{color:#0052cc;font-weight:850;text-transform:uppercase;font-size:13px;letter-spacing:1.6px;margin-bottom:12px}h2{font-size:clamp(32px,4vw,52px);line-height:1.05;letter-spacing:-1.5px;margin-bottom:16px}.section-head p{color:#5f6b7a;font-size:18px}.light{background:#f2f5fa}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.card{background:white;border:1px solid #dfe5ee;padding:28px;min-height:210px;transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(0,0,0,.08)}.icon{width:44px;height:44px;border:1px solid #0052cc;color:#0052cc;display:grid;place-items:center;font-weight:900;margin-bottom:20px}.card h3{font-size:21px;margin-bottom:10px}.card p{color:#5f6b7a;font-size:15px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:30px}.panel{background:white;border:1px solid #dfe5ee;padding:36px}.panel.dark{background:#07111f;color:white;border-color:#07111f}.panel h3{font-size:30px;line-height:1.1;margin-bottom:20px}.clean{list-style:none;display:grid;gap:14px;color:#5f6b7a}.panel.dark .clean{color:#d7e2f0}.clean li{display:flex;gap:10px}.clean li:before{content:"—";color:#0052cc;font-weight:900}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.stat{background:white;border-top:4px solid #0052cc;padding:34px;border-left:1px solid #dfe5ee;border-right:1px solid #dfe5ee;border-bottom:1px solid #dfe5ee}.stat strong{display:block;font-size:clamp(48px,6vw,76px);line-height:1;color:#0052cc;margin-bottom:10px}.stat span{color:#5f6b7a;font-size:18px}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.price-card{background:white;border:1px solid #dfe5ee;padding:34px;position:relative}.price-card.featured{border:2px solid #0052cc;transform:translateY(-10px);box-shadow:0 22px 60px rgba(0,82,204,.16)}.badge{display:inline-block;background:#0052cc;color:white;padding:7px 11px;font-size:12px;font-weight:850;margin-bottom:18px}.price{font-size:42px;font-weight:900;margin:10px 0 18px}.price small{color:#5f6b7a;font-size:15px;font-weight:500}.note{margin-top:22px;color:#5f6b7a;font-weight:650}
+.form-section{background:#07111f;color:white}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}.form-section p{color:#cbd6e5;font-size:18px;margin:14px 0 24px}.contact-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);padding:26px;display:grid;gap:10px;margin-top:24px}.lead-form{background:white;color:#111827;padding:30px;border-radius:6px;display:grid;gap:14px}.lead-form input,.lead-form textarea,.lead-form select{width:100%;padding:14px;border:1px solid #dfe5ee;border-radius:3px;font:inherit}.lead-form textarea{min-height:110px;resize:vertical}.lead-form button{border:0;cursor:pointer}.small{font-size:13px;color:#6b7280}.whatsapp{position:fixed;right:22px;bottom:22px;z-index:1000;background:#25D366;color:white;padding:14px 18px;border-radius:999px;font-weight:850;box-shadow:0 14px 35px rgba(0,0,0,.22)}
+footer{border-top:1px solid #dfe5ee;padding:30px 0;color:#5f6b7a;font-size:14px}.footer-grid{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:920px){.nav-links{display:none}.grid,.split,.stats,.pricing,.form-grid{grid-template-columns:1fr}.hero{padding:88px 0}.price-card.featured{transform:none}.whatsapp{left:18px;right:18px;text-align:center}.actions .btn{width:100%}}
 </style>
 </head>
-
 <body>
-
 <header>
   <div class="container nav">
-    <a class="brand" href="#">
-      <img src="logo.png">
-    </a>
+    <a class="brand" href="#top"><img src="logo.png" alt="Smart Guard Innovations"></a>
     <nav class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
+      <a href="#services">Services</a><a href="#why">Why SGI</a><a href="#pricing">Pricing</a><a href="#contact" class="nav-cta">Free Assessment</a>
     </nav>
   </div>
 </header>
-
+<main id="top">
 <section class="hero">
-  <div class="container">
-    <h1>Reduce Downtime. Secure Your Business.</h1>
-    <p>IT, Network & Security solutions for growing businesses.</p>
-    <a href="#contact" class="btn">Book Free Assessment</a>
+  <div class="container hero-content">
+    <div class="eyebrow">IT • Network • Security • Surveillance</div>
+    <h1>Reduce downtime. Secure your business.</h1>
+    <p>Smart Guard Innovations helps growing businesses improve IT reliability, strengthen security, and manage technology with confidence.</p>
+    <div class="actions"><a class="btn" href="#contact">Book Free IT Assessment</a><a class="btn secondary" href="tel:4379221449">Call 437-922-1449</a></div>
+    <div class="trust-row"><span class="trust-pill">Serving businesses across Canada</span><span class="trust-pill">Fast response support</span><span class="trust-pill">IT + Security in one partner</span></div>
   </div>
 </section>
-
 <section id="services">
   <div class="container">
-    <h2>Our Services</h2>
+    <div class="section-head"><div class="kicker">Solutions</div><h2>One partner for your complete technology environment.</h2><p>We support the systems your business depends on every day — from IT and networks to cybersecurity and surveillance.</p></div>
     <div class="grid">
-      <div class="card">IT Solutions</div>
-      <div class="card">Network Infrastructure</div>
-      <div class="card">Cybersecurity</div>
-      <div class="card">Surveillance Systems</div>
+      <div class="card"><div class="icon">01</div><h3>IT Solutions</h3><p>Managed IT, support, monitoring, system setup, and maintenance.</p></div>
+      <div class="card"><div class="icon">02</div><h3>Network Infrastructure</h3><p>Structured cabling, Wi-Fi, switching, routing, and connectivity.</p></div>
+      <div class="card"><div class="icon">03</div><h3>Cybersecurity</h3><p>Security-first systems to reduce risk and protect operations.</p></div>
+      <div class="card"><div class="icon">04</div><h3>Surveillance Systems</h3><p>CCTV, access control, monitoring, and physical security solutions.</p></div>
     </div>
   </div>
 </section>
-
+<section id="why" class="light">
+  <div class="container split">
+    <div class="panel"><div class="kicker">Challenges</div><h3>Businesses lose time, money, and trust when systems fail.</h3><ul class="clean"><li>Downtime disrupting operations</li><li>Security risks and vulnerabilities</li><li>Multiple vendors creating confusion</li><li>Infrastructure that cannot scale</li></ul></div>
+    <div class="panel dark"><div class="kicker">Why SGI</div><h3>We take ownership of your IT and security environment.</h3><ul class="clean"><li>24/7 IT and security support options</li><li>Fast response and clear communication</li><li>Experienced IT, network, and security team</li><li>Scalable systems built for growth</li></ul></div>
+  </div>
+</section>
 <section>
-  <div class="container">
-    <h2>Results</h2>
-    <div class="stats">
-      <div class="stat"><strong>90%</strong><br>Less Downtime</div>
-      <div class="stat"><strong>40%</strong><br>Better Productivity</div>
-      <div class="stat"><strong>70%</strong><br>Risk Reduction</div>
-    </div>
-  </div>
+  <div class="container"><div class="section-head"><div class="kicker">Impact</div><h2>Measurable results for growing businesses.</h2><p>Our goal is to help you operate with less disruption, stronger protection, and better long-term control.</p></div><div class="stats"><div class="stat"><strong>90%</strong><span>Downtime reduction focus</span></div><div class="stat"><strong>40%</strong><span>Productivity improvement target</span></div><div class="stat"><strong>70%</strong><span>Risk reduction approach</span></div></div></div>
 </section>
-
+<section class="light">
+  <div class="container"><div class="section-head"><div class="kicker">Process</div><h2>Simple process. Clear execution.</h2></div><div class="grid"><div class="card"><div class="icon">01</div><h3>Consultation</h3><p>Understand your business, goals, and current setup.</p></div><div class="card"><div class="icon">02</div><h3>Assessment</h3><p>Identify risks, gaps, and improvement opportunities.</p></div><div class="card"><div class="icon">03</div><h3>Solution</h3><p>Design a tailored IT, network, and security plan.</p></div><div class="card"><div class="icon">04</div><h3>Support</h3><p>Deploy, manage, monitor, and optimize continuously.</p></div></div></div>
+</section>
 <section id="pricing">
-  <div class="container">
-    <h2>Pricing</h2>
-    <div class="grid">
-      <div class="card">Basic - $499/month</div>
-      <div class="card">Professional - $999/month ⭐</div>
-      <div class="card">Enterprise - Custom</div>
-    </div>
+  <div class="container"><div class="section-head"><div class="kicker">Pricing</div><h2>Simple and transparent options.</h2><p>Flexible plans tailored to business needs. Final pricing depends on scope.</p></div><div class="pricing"><div class="price-card"><h3>Basic</h3><div class="price">$499 <small>/ month</small></div><ul class="clean"><li>Basic support</li><li>Monitoring</li><li>Maintenance</li></ul></div><div class="price-card featured"><span class="badge">Most Popular</span><h3>Professional</h3><div class="price">$999 <small>/ month</small></div><ul class="clean"><li>IT + network support</li><li>Security monitoring</li><li>Priority response</li></ul></div><div class="price-card"><h3>Enterprise</h3><div class="price">Custom</div><ul class="clean"><li>Full managed IT</li><li>Advanced security</li><li>Dedicated support</li></ul></div></div><p class="note">Less than the cost of one serious downtime or security incident.</p></div>
+</section>
+<section id="contact" class="form-section">
+  <div class="container form-grid">
+    <div><div class="kicker">Next Step</div><h2>Book your free IT assessment.</h2><p>Tell us what you need help with. We’ll review your situation and recommend the best next step.</p><div class="contact-box"><strong>Smart Guard Innovations Inc.</strong><span>437-922-1449</span><span>289-892-5694</span><span>info@smartguardinnovations.ca</span><span>smartguardinnovations.ca</span></div></div>
+    <form class="lead-form" action="mailto:info@smartguardinnovations.ca" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your name" required>
+      <input type="text" name="Company" placeholder="Company name">
+      <input type="email" name="Email" placeholder="Email address" required>
+      <input type="tel" name="Phone" placeholder="Phone number">
+      <select name="Service"><option value="">What do you need help with?</option><option>IT Support</option><option>Network Infrastructure</option><option>Cybersecurity</option><option>Surveillance / Cameras</option><option>Full Assessment</option></select>
+      <textarea name="Message" placeholder="Briefly describe your requirement"></textarea>
+      <button class="btn" type="submit">Request Free Assessment</button>
+      <div class="small">This opens your email app so you can send the request directly.</div>
+    </form>
   </div>
 </section>
-
-<section id="contact" class="cta">
-  <h2>Book Your Free IT Assessment</h2>
-  <p>437-922-1449 | 289-892-5694</p>
-  <p>info@smartguardinnovations.ca</p>
-</section>
-
-<footer>
-  © Smart Guard Innovations
-</footer>
-
+</main>
+<a class="whatsapp" href="https://wa.me/14379221449?text=Hi%20Smart%20Guard%20Innovations%2C%20I%20would%20like%20a%20free%20IT%20assessment." target="_blank">WhatsApp Us</a>
+<footer><div class="container footer-grid"><div>© Smart Guard Innovations Inc.</div><div>IT • Network • Security Solutions</div></div></footer>
 </body>
 </html>
